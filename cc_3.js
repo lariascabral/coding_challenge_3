@@ -15,3 +15,18 @@ let totalOrders = orders.reduce((sum, quantity) => sum + quantity, 0)       // C
 
 console.log("Updated Orders Quantities:", orders)            // Output: Updated Orders Quantities: (6) [29, 50, 35, 61, 44, 12]
 console.log("Total Orders (count):", totalOrders)            // Output: Total Orders (count): 231
+
+// Task 3 - Employee Performance Tracking
+
+let employee = {
+    name: "Anthony da Silva", 
+    role: "CEO",
+    performanceScore: 89, 
+    isActive: true
+} ;                                                     // Creating of employee object
+employee.performanceScore = 98                          // Reversing typo in the performance score
+employee.prommotionElegible = false                     // Adding promotion eligiblility property
+
+console.log("Employee profile:", employee)              /* Output: Employee profile: {name: 'Anthony da Silva', role: 'CEO', performanceScore: 98, 
+                                                          isActive: true, prommotionElegible: false} */
+
