@@ -24,9 +24,36 @@ let employee = {
     performanceScore: 89, 
     isActive: true
 } ;                                                     // Creating of employee object
-employee.performanceScore = 98                          // Reversing typo in the performance score
-employee.prommotionElegible = false                     // Adding promotion eligiblility property
+employee.performanceScore = 98 ;                        // Reversing typo in the performance score
+employee.prommotionElegible = false ;                   // Adding promotion eligiblility property
 
-console.log("Employee profile:", employee)              /* Output: Employee profile: {name: 'Anthony da Silva', role: 'CEO', performanceScore: 98, 
+console.log("Employee profile:", employee) ;            /* Output: Employee profile: {name: 'Anthony da Silva', role: 'CEO', performanceScore: 98, 
                                                           isActive: true, prommotionElegible: false} */
 
+
+// Task 4 - Customer Feedback Records
+
+let feedback = [
+    {
+        customerName: "Alison Charles",
+        feedbackText: "Thank you for such great service!",
+        rating: 9,
+    } ,
+    {
+        customerName: "Esteban Montes",
+        feedbackText: "Cannot complain, nice service",
+        rating: 8,
+    } ,
+    {
+        customerName: "Danielle Rice",
+        feedbackText: "Excelent installations, really like the spaces!",
+        rating: 9
+    } ,                                                  // Creating of customer feedback database
+];
+
+feedback.push ({
+    customerName: "James Morgan", 
+    feedbackText: "Didn't liked the experience.", 
+    rating:6})                                           // Adding negative feedback to the database.
+
+console.log ("Feedback Records:", feedback)              // Output: Feedback Records: (4) [{…}, {…}, {…}, {…}]
