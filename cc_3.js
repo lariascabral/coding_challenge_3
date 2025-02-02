@@ -16,6 +16,7 @@ let totalOrders = orders.reduce((sum, quantity) => sum + quantity, 0)       // C
 console.log("Updated Orders Quantities:", orders)            // Output: Updated Orders Quantities: (6) [29, 50, 35, 61, 44, 12]
 console.log("Total Orders (count):", totalOrders)            // Output: Total Orders (count): 231
 
+
 // Task 3 - Employee Performance Tracking
 
 let employee = {
@@ -54,6 +55,23 @@ let feedback = [
 feedback.push ({
     customerName: "James Morgan", 
     feedbackText: "Didn't liked the experience.", 
-    rating:6})                                           // Adding negative feedback to the database.
+    rating:6}) ;                                         // Adding negative feedback to the database.
 
-console.log ("Feedback Records:", feedback)              // Output: Feedback Records: (4) [{…}, {…}, {…}, {…}]
+console.log ("Feedback Records:", feedback) ;            // Output: Feedback Records: (4) [{…}, {…}, {…}, {…}]
+
+
+// Task 5 - Inventory Management System
+
+let inventory = {
+    itemName: "Banner",
+    stockCount: 590,
+    price: 12.99,
+
+        calculateTotalValue: function() {
+            return this.stockCount * this.price        // Calculation of total value of inventory in stock
+            } 
+} ;                                                    // Creation of inventory details
+
+console.log("Inventory Details:", inventory) ;         /* Output: Inventory Details: {itemName: 'Banner', stockCount: 590, 
+                                                        price: 12.99, calculateTotalValue: ƒ} */
+console.log("Total Value in Stock:", `$${inventory.calculateTotalValue()}`) ;     //Output: Total Value in Stock: $7664.1
